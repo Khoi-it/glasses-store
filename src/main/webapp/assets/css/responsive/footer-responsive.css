@@ -1,0 +1,21 @@
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Đổi chiều cột thành dọc khi màn hình nhỏ */
+        display: flex;
+    }
+
+    .footer-container > div {
+        flex-direction: column; /* Đổi chiều cột thành dọc khi màn hình nhỏ */
+        display: flex;
+    }
+
+    .footer-section {
+        flex: none;
+        width: 100%;
+    }
+
+    footer input[type="email"] {
+        width: 100%;
+    }
+}

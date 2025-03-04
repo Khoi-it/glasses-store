@@ -1,0 +1,95 @@
+/*.filter-sidebar {*/
+/*    position: sticky;*/
+/*    top: 200px; !* Khoảng cách cố định từ đỉnh viewport *!*/
+/*    bottom: 500px;*/
+/*    !*margin-left: 20px;*!*/
+/*    margin-top: 20px;*/
+/*    align-self: flex-start; !* Đảm bảo chiều cao không bị giãn *!*/
+/*    width: 250px;*/
+/*    background-color: #f9f9f9;*/
+/*    padding: 20px;*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+/*    border-radius: 8px;*/
+
+/*}*/
+
+/*.sec{*/
+/*    top: 500px; !* Khoảng cách cố định từ đỉnh viewport *!*/
+/*}*/
+
+/*.filter-sidebar > form > div {*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*.checkbox-type {*/
+/*    margin-top: 20px;*/
+/*    background-image: url("../../images/banners/checkbox-banner.jpg");*/
+/*    background-size: cover;*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: 8px;*/
+/*    padding: 9px;*/
+/*    opacity: 100%;*/
+/*    box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.25);*/
+
+/*}*/
+.filter-sidebar {
+    position: sticky;
+    align-self: flex-start;
+    width: 250px;
+    background-color: rgba(249, 249, 249, 0.8);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.filter-sidebar:first-of-type {
+    top: 200px;
+    margin-bottom: 280px;
+}
+
+.filter-sidebar.sec {
+    top: 500px;
+    margin-top: -266px;
+}
+
+.checkbox-type {
+    height: auto;
+    overflow: visible;
+    margin-top: 20px;
+    background-image: url("../../images/banners/checkbox-banner.jpg");
+    background-size: cover;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 9px;
+    opacity: 100%;
+    box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+
+.checkbox-group {
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.filter-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    /*border: none;*/
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    width: 100%;
+    font-weight: bolder;
+    transition: all 0.2s ease; /* Hiệu ứng mượt */
+}
+
+.filter-button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+

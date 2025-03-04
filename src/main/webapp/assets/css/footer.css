@@ -1,0 +1,191 @@
+footer {
+    background-color: #fbfad6;
+    font-size: 14px;
+    margin-top: 10px;
+    background-image: url("../images/banners/footer-banner1.jpg");
+    background-size: cover;
+}
+
+hr {
+    background-color: #000000;
+    height: 4px;
+    width: 100%;
+}
+
+.big-footer-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Màu trắng mờ */
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px); /* Hỗ trợ cho trình duyệt WebKit */
+    padding: 40px 20px;
+    box-shadow: inset 3px -2px 50px rgba(0, 0, 0, 0.6);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Cho phép các cột xếp chồng lên khi màn hình nhỏ */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.footer-top, .footer-bottom {
+    display: flex;
+    justify-content: center;
+    border-left: 1px solid black;
+
+}
+
+
+.footer-top > div, .footer-bottom > div {
+    margin: 20px;
+}
+
+.footer-section {
+    flex: 1; /* Mỗi cột có chiều rộng bằng nhau */
+    min-width: 3px; /* Đảm bảo mỗi cột có chiều rộng tối thiểu */
+    margin-bottom: 30px;
+    border-right: black solid 1px;
+    padding: 0px 20px;
+}
+
+.footer-section .hot-line-email, .footer-section .hot-line-phone-number {
+    font-size: 18px;
+    margin: 0
+}
+
+.footer-section .hot-line, .footer-section .list-branches p, .list-branches li::marker {
+    color: #454545;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+}
+
+.list-branches li {
+    list-style-type: '- ';
+}
+
+.footer-section .list-branches p {
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.footer-section p {
+    color: #1c1c1c;
+    font-size: 33px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+
+.footer-section span {
+    color: #454545;
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+}
+
+.footer-section a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #007bff;
+}
+
+.contribution > a, .get-info-user button[type="submit"] {
+    margin: 3% 8% 8% 0;
+    font-weight: 600;
+    display: inline-block;
+    padding: 15px 10%;
+    background: #000000;
+    color: white;
+    border-radius: 13px;
+    border: 2px solid #000000;
+    transition: all 0.5s ease;
+}
+
+.contribution > a:hover, .get-info-user button[type="submit"]:hover {
+    margin: 3% 8% 8% 0;
+    font-weight: 600;
+    display: inline-block;
+    padding: 15px 10%;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+    border-radius: 13px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transform: scale(1.05);
+
+
+}
+
+.contact-footer {
+    /*flex-basis: fit-content;*/
+}
+
+/* Social links */
+
+.social-links {
+    margin-left: 80%;
+    /*max-width: 40%;*/
+
+}
+
+.social-links > ul > li > a {
+    color: #333;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+
+.social-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links ul li {
+    display: flex;
+    margin-top: 10px;
+    align-content: center;
+}
+
+.fa-brands {
+    padding-right: 0px;
+    font-size: 25px;
+}
+
+.social-links a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Email subscription */
+
+footer input {
+    padding: 8px;
+    width: 80%;
+    margin-right: 10%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom-out {
+    margin-top: 30px;
+    border-top: 1px solid #000000;
+    padding-top: 15px;
+    text-align: center;
+    color: #404040;
+}
+

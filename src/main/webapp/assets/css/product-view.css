@@ -1,0 +1,316 @@
+body {
+    background-image: url("../images/banners/product-view-banner.jpg");
+    background-size: cover;
+}
+
+.product {
+    margin: 0px auto 50px auto;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    border-bottom: solid 2px white;
+    padding-bottom: 50px;
+
+}
+
+.product > div {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 170px;
+}
+
+img {
+    vertical-align: middle;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.product-imgs-review {
+    position: relative;
+    width: 30%;
+    border-radius: 30px;
+    margin: 30px;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/*okokokoko*/
+
+.product-details {
+    padding-left: 30px;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.product-code {
+    color: #777;
+}
+
+.product-price {
+    font-size: 40px;
+    color: #454545;
+    margin: 10px 0;
+}
+
+.product-color {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.product-color span {
+    font-weight: bold;
+    align-self: center;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgb(243, 252, 255);
+    border-radius: 30px;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 5px;
+    width: 200px;
+}
+
+.quantity-btn {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px black solid;
+}
+
+.quantity-btn:hover {
+    background-color: rgba(255, 222, 132, 0.0);
+    color: black;
+    transition: color 0.4s ease;
+}
+
+input[type="number"] {
+    width: 60px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.add-to-cart {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: black solid 1px;
+    width: 200px;
+}
+
+.add-to-cart:hover {
+    background-color: rgba(255, 222, 132, 0.0);
+    color: black;
+    transition: color 0.4s ease;
+}
+
+.product-info {
+    margin-top: 20px;
+}
+
+.product-info span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.product-info a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.product-info a:hover {
+    text-decoration: underline;
+}
+
+.product-description {
+    border: solid 1px #000000;
+    padding: 10px;
+    border-radius: 5px;
+    width: 570px;
+    margin: 20px 0px;
+}
+
+.product-description > h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    cursor: pointer; /* Thêm con trỏ tay chỉ để dễ nhận biết */
+    color: #2e2e2e;
+}
+
+.product-description ul {
+    list-style-type: none;
+    font-weight: 500;
+    transition: max-height 0.4s ease, opacity 0.4s ease; /* Hiệu ứng mượt */
+    font-size: 18px;
+    color: #3c3c3c;
+}
+
+.product-description ul li {
+    font-size: 18px;
+}
+
+.product-description > p {
+    font-weight: 500;
+    max-height: 0; /* Ban đầu ẩn nội dung */
+    overflow: hidden; /* Ẩn nội dung thừa */
+    transition: max-height 0.4s ease, opacity 0.4s ease; /* Hiệu ứng mượt */
+    opacity: 0; /* Độ trong suốt ban đầu */
+    font-size: 18px;
+    color: #3c3c3c;
+}
+
+
+.product-description.active > p {
+    max-height: 500px; /* Hiển thị nội dung */
+    opacity: 1; /* Độ trong suốt đầy đủ */
+}
+
+hr {
+    /*border: none;*/
+}
+
+.list-products{
+    padding-bottom: 70px;
+}
+
+.title-product {
+    display: flex;
+    justify-content: center;
+}
+
+.title-product > h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px 50px;
+    /*border-top: 1px white solid;*/
+    border: solid 1px white;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+}
+
+.product-name {
+    color: #575757;
+}
+
+.card-info .product-price {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 18px;
+}

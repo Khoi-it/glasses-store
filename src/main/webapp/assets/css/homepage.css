@@ -1,0 +1,137 @@
+#nav-menu-homepage > a::after {
+    content: "";
+    position: absolute;
+    width: 100%; /* Độ dài gạch ngang */
+    height: 2px; /* Độ dày gạch ngang */
+    background-color: #3c3c3c; /* Màu sắc gạch ngang */
+    left: 0;
+    bottom: 0; /* Vị trí gạch ngang */
+
+}
+
+/*intro-images*/
+
+.banner {
+    width: 90%; /* Để khoảng cách đều hai bên là 20% */
+    margin: 60px auto 20px auto; /* Căn giữa container */
+}
+
+.banner img {
+    border-radius: 30px;
+    box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.2);
+}
+
+.home-intro {
+    margin-top: 80px;
+}
+
+.info-intro {
+    display: flex;
+    /*border: solid 1px black;;*/
+    justify-content: center;
+    gap: 80px;
+    list-style: none;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.intro-item:hover {
+    transform: translateY(-8px);
+    transition: transform .3s;
+}
+
+.info-intro .intro-item {
+    display: flex;
+    gap: 16px;
+    border-right: 3px #606060 solid;
+    border-radius: 10px;
+    padding: 20px;
+    border-bottom: 3px #606060 solid;
+}
+
+.info-intro .intro-item .content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+.info-intro .intro-item .intro-icon {
+    display: flex;
+    align-items: center;
+}
+
+.info-intro .intro-item .content p {
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.info-intro .intro-item .content span {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+.info-intro i {
+    font-size: 45px;
+}
+
+.intro-banner img {
+    width: 100%; /* Cho ảnh tự động phóng to hoặc thu nhỏ theo container */
+    height: auto; /* Giữ tỉ lệ ảnh */
+    display: block; /* Loại bỏ khoảng cách dưới ảnh */
+}
+
+.for-you {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.product-display h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: -20px;
+}
+
+.for-you-list-img {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.for-you-list-img img {
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.for-you-container {
+    margin-bottom: 100px;
+}
+
+.for-you-container h2 {
+    margin-bottom: 60px;
+}
+
+.whitespace {
+    height: 30px;
+    background-color: white;
+}
+
+.for-you-img:hover {
+    transform: scale(1.05) translateY(-8px);
+    transition: transform .3s;
+}

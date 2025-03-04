@@ -1,0 +1,125 @@
+#nav-menu-sunglasses > a::after {
+    content: "";
+    position: absolute;
+    width: 100%; /* Độ dài gạch ngang */
+    height: 2px; /* Độ dày gạch ngang */
+    background-color: #3c3c3c; /* Màu sắc gạch ngang */
+    left: 0;
+    bottom: 0; /* Vị trí gạch ngang */
+}
+
+/*Giá tiền*/
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f44336; /* Màu đỏ để nổi bật */
+}
+
+.page-number-nav {
+    justify-items: center;
+    margin: 30px 0px;
+}
+
+.page-numbers {
+    list-style: none;
+    display: flex;
+    justify-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.page-number {
+    padding: 10px 20px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #fde5a5;
+}
+
+.page-numbers a {
+    text-decoration: none;
+}
+
+.current {
+    background-color: #ffb300;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+.page-number:hover {
+    background-color: #836c2b;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+
+/*product description*/
+.product-description {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 85%;
+    margin: auto;
+    border-radius: 10px;
+    gap: 50px;
+}
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.9); /* Hiệu ứng nền như kính */
+    backdrop-filter: blur(10px); /* Làm mờ nền */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    max-width: 60%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    justify-items: center;
+    margin: 30px;
+
+}
+
+
+.description-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.description-content {
+    padding: 20px;
+    color: #333;
+}
+
+.description-content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.description-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: justify;
+
+}
+
+/*phan loai*/
+.goods {
+    display: flex;
+}
+
+.container-temp1 {
+    background-image: url("../images/banners/background.jpg");
+}
+
+.container-temp2 {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+}

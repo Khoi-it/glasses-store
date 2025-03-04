@@ -1,0 +1,85 @@
+#nav-menu-about > a::after {
+    content: "";
+    position: absolute;
+    width: 100%; /* Độ dài gạch ngang */
+    height: 2px; /* Độ dày gạch ngang */
+    background-color: #3c3c3c; /* Màu sắc gạch ngang */
+    left: 0;
+    bottom: 0; /* Vị trí gạch ngang */
+}
+.box {
+    text-align: center;
+    padding: 100px;
+    background: linear-gradient(135deg, #e0e0e0 25%, #f8f8f8 75%);
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 70px auto;
+
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+.breadcrumb {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+.about-container {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    width: 90%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 20px;
+    align-items: center;
+    border-radius: 20px;
+}
+.about-container  h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.about-container  h2  {
+    font-size: 25px;
+    margin-top: 20px;
+    font-style: italic;
+    text-align: center;
+
+}
+.about-container  h3{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.about-container p{
+    margin-top: 20px;
+    font-size: 16px;
+
+}
+.about-container  img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.about-container  .img1 {
+    height:700px;
+    width: 1000px;
+}

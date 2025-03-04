@@ -1,0 +1,188 @@
+/*Header*/
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Đảm bảo header nằm trên các phần tử khác */
+    background-color: #ffffff; /* Màu nền cho header */
+    box-shadow: 1px 4px 5px 5px rgba(0, 0, 0, 0.1); /* Tạo đổ bóng cho header */
+
+}
+
+.header-container {
+    display: flex;
+    /*border: solid 1px black;*/
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: large;
+    /*position: relative;*/
+    background: #fffea7;
+
+
+}
+
+.header-container a {
+    text-decoration: none;
+    color: #3c3c3c;
+    /*border: solid 1px black;*/
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo > a img {
+    width: 55px;
+}
+
+/* Định dạng cho menu chính */
+.main-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    background-color: #fffea7;
+    /*border: solid 1px #ff0000;*/
+}
+
+.main-menu > li {
+    position: relative;
+    padding: 15px 20px;
+    /*border: solid 1px blue;*/
+}
+
+.main-menu > li > a {
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Hiệu ứng gạch chân khi hover */
+.main-menu > li > a:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%; /* Độ dài gạch ngang */
+    height: 2px; /* Độ dày gạch ngang */
+    background-color: #3c3c3c; /* Màu sắc gạch ngang */
+    left: 0;
+    bottom: 0; /* Vị trí gạch ngang */
+    /*opacity: 0; !* Ẩn menu *!*/
+    /*transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s; !* Thêm transition *!*/
+}
+
+
+/* Định dạng cho dropdown menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Để dropdown nằm ngay dưới chữ */
+    background-color: #6a692e;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    border-radius: 5px;
+    opacity: 0; /* Ẩn menu */
+    visibility: hidden; /* Ẩn menu */
+    transform: translateY(-10px); /* Đẩy menu lên trên */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s; /* Thêm transition */
+}
+
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1; /* Hiển thị menu */
+    visibility: visible; /* Hiển thị menu */
+    transform: translateY(0); /* Đẩy menu xuống vị trí ban đầu, tạo hiệu ứng di chuyển xuống */
+}
+
+.dropdown::after {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0d7"; /* Mã icon cho Font Awesome (ví dụ: user icon) */
+    font-weight: 900; /* Đảm bảo trọng lượng đúng của icon */
+    padding-left: 5px;
+}
+
+.dropdown-lv2 > a::after {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0d7"; /* Mã icon cho Font Awesome (ví dụ: user icon) */
+    font-weight: 900; /* Đảm bảo trọng lượng đúng của icon */
+    padding-left: 5px;
+    color: white;
+}
+
+.dropdown-menu > li:hover, .dropdown-menu-lv2 > li:hover,
+.dropdown-menu-lv2 > li > a:hover, .dropdown-menu > li > a:hover {
+    background-color: #494829;
+}
+
+
+.dropdown-lv2 {
+    display: flex;
+}
+
+/* Định dạng liên kết trong dropdown */
+.dropdown-menu li a {
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+
+}
+
+/* Hiệu ứng hiển thị dropdown khi hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu-lv2 {
+    position: absolute;
+    left: 100%; /* Đặt submenu nằm bên phải */
+    top: 0;
+    background-color: #6a692e;
+    margin-left: 3px; /* Khoảng cách giữa menu và submenu */
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    border-radius: 5px;
+    opacity: 0; /* Ẩn menu */
+    visibility: hidden; /* Ẩn menu */
+    transform: translateY(-10px); /* Đẩy menu lên trên */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s; /* Thêm transition */
+}
+
+.dropdown-menu li:hover .dropdown-menu-lv2 {
+    opacity: 1; /* Hiển thị menu */
+    visibility: visible; /* Hiển thị menu */
+    transform: translateY(0); /* Đẩy menu xuống vị trí ban đầu, tạo hiệu ứng di chuyển xuống */
+}
+
+
+header .menu, .header-right {
+    display: flex;
+    gap: 30px;
+}
+
+
+.icon {
+    font-size: 25px;
+    position: relative;
+    color: #000000;
+}
+
+.open-search:hover {
+    cursor: pointer;
+}
+
+.search-field {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    width: 200px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+
+

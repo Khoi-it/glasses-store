@@ -1,0 +1,112 @@
+#nav-menu-contact > a::after {
+    content: "";
+    position: absolute;
+    width: 100%; /* Độ dài gạch ngang */
+    height: 2px; /* Độ dày gạch ngang */
+    background-color: #3c3c3c; /* Màu sắc gạch ngang */
+    left: 0;
+    bottom: 0; /* Vị trí gạch ngang */
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /*padding: 200px;*/
+    margin: auto;
+}
+
+
+.left-section {
+    flex: 1;
+    padding: 30px;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*.contact-logo {*/
+/*    max-width: 100px;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+.intro-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.right-section {
+    flex: 1;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.feedback-form label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feedback-form textarea,
+.feedback-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    resize: none;
+}
+
+.feedback-form textarea::placeholder,
+.feedback-form input::placeholder {
+    color: #aaa;
+}
+
+.note {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.submit-btn {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.container-temp1 {
+    background-image: url("../images/banners/background.jpg");
+}
+
+.container-temp2 {
+    background-color: rgba(39, 39, 39, 0.2);
+    backdrop-filter: blur(15px);
+    height: 673px;
+    align-content: center;
+}
