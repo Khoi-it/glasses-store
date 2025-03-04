@@ -6,12 +6,12 @@ import jakarta.servlet.annotation.*;
 
 import java.io.IOException;
 
-@WebServlet(name = "home", value = "/home")
-public class home extends HttpServlet {
+@WebServlet(name = "userManagementController", value = "/quanlynguoidung")
+public class userManagementController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/views/web/home.jsp").forward(request,response);
+        request.getRequestDispatcher("/views/admin/user-management.jsp").forward(request,response);
     }
 
     @Override
